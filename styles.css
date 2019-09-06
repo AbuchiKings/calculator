@@ -1,0 +1,104 @@
+body {
+  margin: 0;
+  font-family: Candara, Calibri, Arial, sans-serif;
+  text-align: center;
+  background-color: #2b3e50;
+  color: white;
+}
+
+a {
+  color: #aeadbb;
+  text-decoration: none;
+}
+
+header {
+  font-family: 'Gill Sans', 'Gill Sans MT', sans-serif;
+  margin-bottom: 30px;
+  letter-spacing: 3px;
+  height: 56px;
+  line-height: 56px;
+  text-shadow: -3px -1px rgba(0, 0, 0, 0.5);
+  padding: 0 20px;
+}
+
+#title {
+  float: left;
+  font-size: 30px;
+}
+
+.links-container {
+  float: right;
+}
+
+.links-container a {
+  color: #aeadbb;
+  margin-left: 15px;
+}
+
+.links-container a:visited {
+  color: #aeadbb;
+}
+
+.links-container a:hover {
+  color: #13d1cb;
+}
+
+#calculator {  
+  margin: auto;
+  border: none;
+  width: 320px;
+  display: block;
+  padding: 5px;
+  background-color: #f2f5f8b4;
+  
+}
+
+#display {
+  height: 70px;
+  box-sizing: border-box;
+  width: 320px;
+  text-align: right;
+  background-color: rgb(241, 245, 244);
+  font-family: Candara, Arial, Helvetica, sans-serif;
+  font-size: 35px;
+  font-weight: 100;
+  margin: auto;
+  color: #2e2e36;
+  padding: 10px;
+  outline: none;
+  border: none;
+}
+
+table {
+  width: 320px;
+  background-color: #f2f5f8b4;
+  margin: auto;
+  border-collapse: separate;
+  border-spacing: 8px; 
+}
+
+td {
+  height: 60px;
+  width: 50px;
+  font-size: 20px;
+  vertical-align: middle;
+  padding: 5px;
+  text-align: center;
+  background-color: rgb(2, 1, 1);
+  cursor: pointer;
+  box-shadow: 1px 1px 0 0;
+  user-select: none;
+}
+
+
+
+.del, .clear{
+  background-color: rgb(160, 51, 51);
+}
+
+.operator, .eval{
+  background-color: #06633f;
+
+}
+
+

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <header>
+        <a href="index.html" id="title">Calculator</a>
+        <div class="links-container">
+            <a href="https://github.com/Abuchikings" id="github">Github</a>
+        </div>
+        <br class="clear">
+    </header>
+
+    <main>
+        <div id="calculator">
+
+
+            <input type="text" value="" autofocus id="display" maxlength="15">
+
+
+            <table id="table">
+
+                <tr class="row row-one">
+                    <td class="calc clear" id="">C</td>
+                    <td class="calc div operator" id="/">/</td>
+                    <td class="calc multi operator" id="*"> * </td>
+                    <td class="calc del" id="">DEL</td>
+
+                </tr>
+
+                <tr class="row row-two">
+                    <td class="num calc" id="7">7</td>
+                    <td class="num calc" id="8">8</td>
+                    <td class="num calc" id="9">9</td>
+                    <td class="num calc plus operator" id="+">+</td>
+                </tr>
+
+                <tr class="row row-three">
+
+                    <td class="num calc" id="4">4</td>
+                    <td class="num calc" id="5">5</td>
+                    <td class="num calc" id="6">6</td>
+                    <td class="num calc minus operator" id="-"> - </td>
+
+                </tr>
+
+                <tr class="row row-four">
+                    <td class="num calc" id="1">1</td>
+                    <td class="num calc" id="2">2</td>
+                    <td class="num calc" id="3">3</td>
+
+                    <td class="calc eval" rowspan="2" id="">=</td>
+                </tr>
+
+                <tr class="row row-five">
+                    <td colspan="2" class="num calc zero" id="0">0</td>
+                    <td class="num calc" id=".">.</td>
+                </tr>
+
+            </table>
+        </div>
+    </main>
+</body>
+
+</html>

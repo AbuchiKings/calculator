@@ -9,7 +9,7 @@
 
 
     //function declarations
-    
+
     /**
      * @description Function updates variable, curInput depending on value of num
      * @param {string} num User input 
@@ -53,11 +53,11 @@
             if (arr.includes('')) {
                 return;
             }
-           let ans = eval(display.value) * 1e6
-			ans = Math.round(ans, 6);
-			ans = ans / 1e6;
+            let ans = eval(display.value) * 1e6
+            ans = Math.round(ans, 6);
+            ans = ans / 1e6;
             display.value = ans;
-            curInput = ans+'';
+            curInput = ans + '';
         }
         return;
     };
@@ -115,7 +115,8 @@
 
     display.addEventListener('keydown', function (event) {
         const allowed_key = allowed_keys.includes(event.key);
-        if ((event.key >= '0' && event.key <= '9') || allowed_key || operators.includes(event.key)) {
+        if (((event.key >= '0' && event.key <= '9') || allowed_key || operators.includes(event.key)) &&
+        display.selectionStart === display.value.length) {
             if ((event.key >= '0' && event.key <= '9') || event.key === '.') {
                 if (event.key === '.') {
                     if (curInput.indexOf('.') !== -1 || checkPrevValue()) return event.preventDefault();
@@ -123,13 +124,13 @@
 
             }
 
-            if(event.key === 'Backspace'){
+            if (event.key === 'Backspace') {
                 event.preventDefault();
                 let value = display.value;
                 display.value = value.slice(0, value.length - 1);
 
             }
-
+            console.log(display.selectionStart)
             updateCurInput(event.key);
 
             if (event.key === "Enter") {

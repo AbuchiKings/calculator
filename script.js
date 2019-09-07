@@ -57,7 +57,7 @@
 			ans = Math.round(ans, 6);
 			ans = ans / 1e6;
             display.value = ans;
-            curInput = ans;
+            curInput = ans+'';
         }
         return;
     };

@@ -67,6 +67,7 @@ header {
   padding: 10px;
   outline: none;
   border: none;
+  user-select: none;
 }
 
 table {
@@ -74,12 +75,12 @@ table {
   background-color: #f2f5f8b4;
   margin: auto;
   border-collapse: separate;
-  border-spacing: 8px; 
+  border-spacing: 10px; 
 }
 
 td {
   height: 60px;
-  width: 50px;
+  width: 70px;
   font-size: 20px;
   vertical-align: middle;
   padding: 5px;

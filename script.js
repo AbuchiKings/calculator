@@ -122,6 +122,13 @@
 
             }
 
+            if(event.key === 'Backspace'){
+                event.preventDefault();
+                let value = display.value;
+                display.value = value.slice(0, value.length - 1);
+
+            }
+
             updateCurInput(event.key);
 
             if (event.key === "Enter") {

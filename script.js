@@ -92,6 +92,8 @@
             }
 
         } else if (event.target.classList.contains('del')) {
+            //console.log(display.selectionStart)
+
             display.value = value.slice(0, value.length - 1);
             curInput = curInput.slice(0, curInput.length - 1);
 
@@ -116,7 +118,7 @@
     display.addEventListener('keydown', function (event) {
         const allowed_key = allowed_keys.includes(event.key);
         if (((event.key >= '0' && event.key <= '9') || allowed_key || operators.includes(event.key)) &&
-        display.selectionStart === display.value.length) {
+            display.selectionStart === display.value.length) {
             if ((event.key >= '0' && event.key <= '9') || event.key === '.') {
                 if (event.key === '.') {
                     if (curInput.indexOf('.') !== -1 || checkPrevValue()) return event.preventDefault();
@@ -130,7 +132,6 @@
                 display.value = value.slice(0, value.length - 1);
 
             }
-            console.log(display.selectionStart)
             updateCurInput(event.key);
 
             if (event.key === "Enter") {

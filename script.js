@@ -53,9 +53,8 @@
             if (arr.includes('')) {
                 return;
             }
-            let result = eval(value) * 1e6
+            let result = eval(value) * 1e0
             result = Math.round(result, 6);
-            result = result / 1e6;
             display.value = result;
             curInput = '';
         }
